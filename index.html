@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Euroffice Dealer Locations (Google Maps API)</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="dealerMap">
+  <header class="dealerMap__headBar">
+    <h1>Dealer Map</h1>
+  </header>
+  <aside class="findDealer">
+    <form action="" for="findDealer__form">
+      <label for="findDealer" class="findDealer__label">Search Dealers</label>
+      <input type="search" id="findDealer" for="findDealer__input" placeholder="Search Dealer Name or Code..." />
+    </form>
+    <ul class="findDealer__dealerList"></ul>
+  </aside>
+  <section class="map">
+    <header class="map__header">
+      <div class="map__dealerLogoContainer map__dealerLogoContainer--empty">
+        <img src="https://eoimg.s3.amazonaws.com/concepts/logo-placeholder.png" alt="Dealer Logo" class="map__dealerLogo map__dealerLogo--hidden" />
+      </div>
+      <div class="map__dealerInfo map__dealerInfo--empty">
+        <h1 class="map__dealerName">Dealer Name</h1>
+        <address class="map__dealerAddress"></address>
+        <a href="#" class="map__dealerWebUrl" disabled></a>
+        <a href="#" class="map__dealerPhone" disabled></a>
+        <a href="#" class="map__dealerEmail" disabled></a>
+      </div>
+    </header>
+    <div id="map" class="map__container"></div>
+  </section>
+</div>
+  <script src='https://use.fontawesome.com/744062e3a9.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
